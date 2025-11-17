@@ -5,6 +5,9 @@ original_stdout = sys.stdout
 with open('genedata.0.txt', 'w', encoding='utf-8') as f:
     sys.stdout = f
 
+    print("Lukashevich Vlad")
+    print("Генетический поиск")
+
     # def coder_chains(some_chains):
     #     proto = list(some_chains)
     #
