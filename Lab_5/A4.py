@@ -52,7 +52,10 @@ with open('genedata.0.txt', 'w', encoding='utf-8') as f:
 
             if current_el.isdigit() and int(current_el) >= 3 and int(current_el) <= 9:
                 count = int(current_el)
-                next_el = proto[i + 1] if i + 1 < len(proto) else None
+                if i + 1 < len(proto):
+                    next_el = proto[i + 1]
+                else:
+                    next_el = None
 
                 if next_el:
                     for j in range(count):
